@@ -1,4 +1,4 @@
-/*   
+/*
  * Template Name: Orbit - Responsive Resume/CV Template for Developers
  * Version: 1.0
  * Author: Xiaoying Riley
@@ -89,6 +89,7 @@ p {
   margin-right: 5px;
   font-size: 18px;
   vertical-align: middle;
+  width: 0.9em;
 }
 .sidebar-wrapper .contact-list li {
   margin-bottom: 15px;
@@ -294,7 +295,7 @@ p {
 /* Large devices (large desktops, 1200px and up) */
 /* Ex-Large devices (large desktops, 1200px and up) */
 
-/* 
+/*
 used for profile image
 */
 .profile-img {
