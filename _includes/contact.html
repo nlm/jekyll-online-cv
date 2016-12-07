@@ -1,0 +1,14 @@
+{% if site.data.contact %}
+<div class="contact-container container-block">
+	<ul class="list-unstyled contact-list">
+		{% for entry in site.data.contact %}
+    <li class="contact-item">
+			<i class="fa fa-fw fa-{{ entry.fa-icon | default: 'address-book' }}"></i>
+			{% if entry.link %}
+			<a href="{{ entry.link }}">{{ entry.content }}</a>
+			{% else %}{{ entry.content }}{% endif %}
+		</li>
+		{% endfor %}
+	</ul>
+</div><!--//contact-container-->
+{% endif %}

@@ -1,0 +1,18 @@
+# Your name
+name: Alan Doe
+
+# A tagline
+tagline: Full Stack Developer
+
+# Your profile picture
+# place a 100x100 picture inside /assets/images/ folder
+# and provide the name of the file below
+pic: profile.png
+
+# Your contact details
+email: hello@webjeda.com
+phone: 012 345 6789
+website: blog.webjeda.com #do not add http://
+linkedin: alandoe
+github: sharu725
+twitter: '@webjeda'

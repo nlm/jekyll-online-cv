@@ -1,0 +1,21 @@
+{% if site.data.experiences %}
+<section class="section experiences-section">
+<h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+{% for entry in site.data.experiences %}
+  <div class="item">
+      <div class="meta">
+          <div class="upper-row">
+            <h3 class="job-title">{{ entry.job-title }}</h3>
+            <div class="time">{{ entry.time }}</div>
+          </div><!--//upper-row-->
+          <div class="company">{{ entry.company }}, {{ entry.location }}</div>
+      </div><!--//meta-->
+      <div class="details">
+        {% for detail in entry.details %}
+          <p>{{ detail }}</p>
+        {% endfor %}
+      </div><!--//details-->
+  </div><!--//item-->
+{% endfor %}
+</section><!--//section-->
+{% endif %}
