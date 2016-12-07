@@ -10,7 +10,7 @@ description: my beautiful online resume
 
 # Enable one of these styles by removing #.
 # Style will be applied only after restarting the build or serve.
-style: styles-1
+style: styles
 #style: styles-2
 #style: styles-3
 #style: styles-4
