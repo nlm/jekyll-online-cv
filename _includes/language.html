@@ -3,7 +3,9 @@
   <h2 class="container-block-title">Languages</h2>
   <ul class="list-unstyled interests-list">
     {% for entry in site.data.language %}
-    <li>{{ entry.language }} <span class="lang-desc">({{ entry.level }})</span></li>
+    <li>{{ entry.language | xml_escape }}
+      <span class="lang-desc">({{ entry.level | xml_escape }})</span>
+    </li>
     {% endfor %}
   </ul>
 </div><!--//interests-->

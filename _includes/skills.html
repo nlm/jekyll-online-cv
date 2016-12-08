@@ -4,7 +4,7 @@
   <div class="skillset">
     {% for entry in site.data.skills %}
     <div class="item">
-      <h3 class="level-title">{{ entry.title }}</h3>
+      <h3 class="level-title">{{ entry.title | xml_escape }}</h3>
       <div class="level-bar">
         <div class="level-bar-inner" data-level="{{ entry.level }}"></div>
       </div><!--//level-bar-->

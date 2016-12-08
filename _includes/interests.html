@@ -3,7 +3,7 @@
   <h2 class="container-block-title">Interests</h2>
   <ul class="list-unstyled interests-list">
     {% for interest in site.data.interests %}
-    <li>{{ interest }}</li>
+    <li>{{ interest | markdownify }}</li>
     {% endfor %}
   </ul>
 </div><!--//interests-->

@@ -5,14 +5,15 @@
   <div class="item">
       <div class="meta">
           <div class="upper-row">
-            <h3 class="job-title">{{ entry.job-title }}</h3>
-            <div class="time">{{ entry.time }}</div>
+            <h3 class="job-title">{{ entry.job-title | xml_escape }}</h3>
+            <div class="time">{{ entry.time | xml_escape }}</div>
           </div><!--//upper-row-->
-          <div class="company">{{ entry.company }}, {{ entry.location }}</div>
+          <div class="company">{{ entry.company | xml_escape }},
+            {{ entry.location | xml_escape }}</div>
       </div><!--//meta-->
       <div class="details">
         {% for detail in entry.details %}
-          <p>{{ detail }}</p>
+          <p>{{ detail | markdownify }}</p>
         {% endfor %}
       </div><!--//details-->
   </div><!--//item-->

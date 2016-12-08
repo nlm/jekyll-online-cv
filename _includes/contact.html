@@ -5,8 +5,8 @@
     <li class="contact-item">
 			<i class="fa fa-fw fa-{{ entry.fa-icon | default: 'address-book' }}"></i>
 			{% if entry.url %}
-			<a href="{{ entry.url }}">{{ entry.content }}</a>
-			{% else %}{{ entry.content }}{% endif %}
+			<a href="{{ entry.url }}">{{ entry.content | xml_escape }}</a>
+			{% else %}{{ entry.content | xml_escape }}{% endif %}
 		</li>
 		{% endfor %}
 	</ul>

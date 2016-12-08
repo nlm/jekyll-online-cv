@@ -3,9 +3,9 @@
 <h2 class="container-block-title">Education</h2>
 {% for entry in site.data.education %}
 <div class="item">
-    <h4 class="degree">{{ entry.degree }}</h4>
-    <h5 class="meta">{{ entry.place }}</h5>
-    <div class="time">{{ entry.time }}</div>
+    <h4 class="degree">{{ entry.degree | xml_escape }}</h4>
+    <h5 class="meta">{{ entry.place | xml_escape }}</h5>
+    <div class="time">{{ entry.time | xml_escape }}</div>
 </div><!--//item-->
 {% endfor %}
 </div><!--//education-container-->

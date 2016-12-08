@@ -3,7 +3,7 @@
   <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
   <div class="summary">
     {% for entry in site.data.career-profile %}
-    <p>{{ entry }}</p>
+    <p>{{ entry | markdownify }}</p>
     {% endfor %}
   </div><!--//summary-->
 </section><!--//section-->
