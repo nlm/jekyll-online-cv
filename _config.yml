@@ -1,6 +1,6 @@
 # Edit basic info about your site here
 url: 'http://example.com'
-baseurl: '/online-cv' #change it according to your repository name
+baseurl: '/jekyll-online-cv' #change it according to your repository name
 
 title: My Resume
 description: my beautiful online resume
