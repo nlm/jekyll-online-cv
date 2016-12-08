@@ -5,3 +5,4 @@
 [x] clean code, remove trailing whitespaces, adjust indent
 [ ] improve accessibility
 [ ] add i18n support
+[ ] fix documentation and tutorial
